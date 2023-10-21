@@ -7,24 +7,24 @@
     <img src="{{aluno.foto.url}}" alt="imagem de {{aluno.nome}}">
 
     <h3 class="mb-3">{{aluno.nome}}</h3>
-    <div class="infosPessoais border p-3">
+    <div class="div1 infosPessoais border p-3">
         <h3>informações Pessoais</h3>
-        <div class="row">
-            <div class="col-12">
+        <div class="row ">
+            <div class="col-12 ">
                 <p>Idade: {{aluno.idade}} </p>
                 <p>CPF: {{aluno.cpf}} </p>
 
             </div>
         </div>
     </div>
-    <div class="InfosContatos border p-3">
+    <div class="div1 InfosContatos border p-3">
         <div class="row">
             <div class="col-12">
                 <h3>Contatos</h3>
                 <P>Email: {{aluno.email}} </P>
                 <P>Contato:{{aluno.contato}} </P>
             </div>
-            <div class="InfoResidencial border p-3">
+            <div class="div1 InfoResidencial border p-3">
                 <div class="row">
                     <div class="col-12">
                         <h3>Localizção</h3>
@@ -32,6 +32,7 @@
                         <p>CEP: {{aluno.cep}} </p>
                     </div>
                 </div>
+            
                 
                 <a href="{% url 'index' %}" class="btn btn-primary btn-sm bi m-2">👉Voltar</a>
                 

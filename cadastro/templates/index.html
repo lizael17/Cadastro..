@@ -4,26 +4,39 @@
 
     {% if alunos %}
 
-    <table class="table">
-        <tr>
-            <th>Ação</th>
-            <th>Nome</th>
-            <th>Email</th>
-        </tr>
-        {% for aluno in alunos %}
-        <tr>
-            <td>
-                <a href="{% url 'aluno' id=aluno.id %}" class="btn btn-primary btn-sm">👁️‍🗨️Visualizar</a>
-            </td>
-
-            <td>{{aluno.nome}}</td>
-            <td>{{aluno.email}}</td>
-        {%  endfor %}
-        </tr>
-    </table>
-    {% else %}
-
-    <p>Sem alunos para mostrar no momento</p>
+    <div class="accordion accordion-flush " id="accordionFlushExample">
+        <div class="accordion-item">
+          <h3 class="accordion-header mb-3">
+            <button class="accordion-button collapsed text-bg-primary" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              📓lista de alunos
+            </button>
+          </h3>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                <table class="table">
+                    <tr>
+                        <th>Ação</th>
+                        <th>Nome</th>
+                        <th>Email</th>
+                    </tr>
+                    {% for aluno in alunos %}
+                    <tr>
+                        <td>
+                            <a href="{% url 'aluno' id=aluno.id %}" class="btn btn-primary btn-sm">Visualizar</a>
+                        </td>
+            
+                        <td>{{aluno.nome}}</td>
+                        <td>{{aluno.email}}</td>
+                    {%  endfor %}
+                    </tr>
+                </table>
+                {% else %}
+            
+                <p>Sem alunos para mostrar no momento</p>         
+            </div>
+          </div>
+    
 
     {% endif %}
 

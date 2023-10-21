@@ -16,48 +16,17 @@
 <body class="text-bg-secondary p-3">
   <h1 class="container">💻Cadastro</h1>
 
-  <div class="accordion accordion-flush " id="accordionFlushExample">
-    <div class="accordion-item">
-      <h3 class="accordion-header mb-3">
-        <button class="accordion-button collapsed text-bg-primary" type="button" data-bs-toggle="collapse"
-          data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-          descrição sobre alunos
-        </button>
-      </h3>
-      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">
-          <p>Os alunos são indivíduos em busca de conhecimento e educação. Eles frequentam
-            escolas, faculdades e universidades para adquirir habilidades, conhecimento e experiência que os ajudarão ao
-            longo de suas vidas. Os alunos podem variar em idade, desde crianças em idade escolar até adultos que
-            retornam
-            à educação para avançar em suas carreiras ou perseguir interesses pessoais.</p>
 
-          <p>A jornada de um aluno envolve aprender uma ampla gama de disciplinas, desde matemática e ciências até
-            humanidades e artes. Eles enfrentam desafios acadêmicos, como provas e trabalhos de casa, mas também têm a
-            oportunidade de se envolver em atividades extracurriculares, clubes e projetos que enriquecem sua
-            experiência
-            educacional.</p>
-
-          <p>Além disso, os alunos desenvolvem habilidades sociais, como trabalho em equipe e comunicação, à medida que
-            interagem com colegas e professores. A educação não se limita apenas à sala de aula; ela também envolve o
-            crescimento pessoal e o desenvolvimento de valores e ética.</p>
-
-          <p>É importante apoiar e inspirar os alunos em sua jornada educacional, pois eles representam o futuro e têm
-            um
-            papel fundamental na construção de sociedades mais informadas e prósperas. A educação é uma ferramenta
-            poderosa que capacita os alunos a alcançar seus objetivos e contribuir para o bem-estar da sociedade como um
-            todo.</p>
-        </div>
-      </div>
-
-
-      {% block content %}{% endblock %}
+      {% block content %}
+      {% endblock %}
 
 
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+
+        <script src="{% static 'js/scripts.js' %}"></script>
 
 </body>
 
